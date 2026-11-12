@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-navy: #123C80;
+  --brand-blue: #2389E8;
+  --brand-yellow: #FFD447;
+  --brand-turquoise: #12B8B0;
+  --brand-light: #F4F8FE;
+  --brand-success: #22A06B;
+  --brand-orange: #F59E0B;
+  --brand-danger: #E5484D;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(180deg, #f9fbff 0%, #f4f8fe 100%);
+  color: #15315f;
+}
+
+.card {
+  @apply rounded-3xl border border-slate-200 bg-white shadow-soft;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-2xl bg-brand-navy px-4 py-3 text-sm font-semibold text-white transition hover:bg-brand-blue;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-800 transition hover:border-brand-blue hover:text-brand-blue;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold;
+}
+
+input, select, textarea {
+  @apply rounded-2xl border border-slate-200 bg-white px-3 py-2.5 text-slate-800 outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20;
+}
